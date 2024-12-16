@@ -6,7 +6,7 @@ public class Day1{
     public static String generateElfName(String name){
         int random = (int) (Math.random() * 5);
         if (name == null || name == "") {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Name cannot be null or empty");
         }
         return elf_names[random] +  " " + name;
     }
